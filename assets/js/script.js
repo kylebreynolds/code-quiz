@@ -11,17 +11,11 @@ var timerEl = document.getElementById("countdown");
 
 
 
-// Start Game Function //
+// Start Game Function - starts timer and begins questions //
  buttonEl.addEventListener("click", function(){
     // delete this alert once real function added //
   
  })
-
-
-
-
-// Answer Question Function //
-
 //timer function//
 document.getElementById("startQuiz").addEventListener("click", function(){
    var timeleft = 60;
@@ -39,3 +33,28 @@ document.getElementById("startQuiz").addEventListener("click", function(){
 
    console.log(countdown);
 });
+
+// Hide game intro//
+document.getElementById("startQuiz").addEventListener("click", function() {
+   var x = document.getElementById("beforeStart");
+   if (x.style.display === "none") {
+     x.style.display = "block";
+   } else {
+     x.style.display = "none";
+   }
+})
+
+document.getElementById("startQuiz").addEventListener("click", function() {
+   var x = document.getElementById("startQuiz");
+   if (x.style.display === "none") {
+     x.style.display = "block";
+   } else {
+     x.style.display = "none";
+   }
+})
+
+
+
+
+
+//test hide show//

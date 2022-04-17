@@ -33,7 +33,7 @@ document.getElementById("startQuiz").addEventListener("click", function(){
    timeleft -= 1;
    if(timeleft <= 0){
        clearInterval(downloadTimer);
-       document.getElementById("countdown").innerHTML = "Time is up!"
+       document.getElementById("countdown").innerHTML = "GAME OVER!"
    }
    }, 1000);
 

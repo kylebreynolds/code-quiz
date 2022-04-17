@@ -35,24 +35,15 @@ document.getElementById("startQuiz").addEventListener("click", function(){
 });
 
 // Hide game intro//
-document.getElementById("startQuiz").addEventListener("click", function() {
-   var x = document.getElementById("beforeStart");
-   if (x.style.display === "none") {
-     x.style.display = "block";
-   } else {
-     x.style.display = "none";
-   }
-})
 
-document.getElementById("startQuiz").addEventListener("click", function() {
-   var x = document.getElementById("startQuiz");
-   if (x.style.display === "none") {
-     x.style.display = "block";
-   } else {
-     x.style.display = "none";
-   }
-})
 
+//test//
+document.getElementById("startQuiz")
+        .addEventListener("click", function() {
+  document.getElementById("beforeStart").hidden = true;
+  document.getElementById("startQuiz").hidden = true;
+  document.getElementById("afterStart").hidden = false;
+}, false);
 
 
 

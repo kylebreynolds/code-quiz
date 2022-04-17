@@ -14,36 +14,28 @@ var timerEl = document.getElementById("countdown");
 // Start Game Function //
  buttonEl.addEventListener("click", function(){
     // delete this alert once real function added //
-   alert("button clicked");
+  
  })
 
 
-// Start Timer Function //
-function countdown() {
-   var timeLeft = 60;
-
-var timeInterval = setInterval(function () {
-   // As long as the `timeLeft` is greater than 1
-   if (timeLeft > 1) {
-     // set the `textContent` of `timerEl` to shoew the remaining seconds.
-     timerEl.textContent = timeLeft + ' seconds remaining';
-     // decrement `timeLeft` by 1
-     timeLeft--;
-   } else if (timeLeft === 1) {
-     //when timeLeft is equal to 1, rename to second instead of seconds
-     timerEl.textContent = timeLeft + ' second remaining';
-     timeLeft--;
-   } else {
-     // once timeLeft gets to 0, set timerEl to an empty string
-     timerEl.textContent = '';
-     // use `clearInterval()` to stop the timer
-     clearInterval(timeInterval);
-     //call the `displayMessage()` function
-     displayMessage();
-   }
- }, 1000);
-}
 
 
-countdown();
 // Answer Question Function //
+
+//timer function//
+document.getElementById("startQuiz").addEventListener("click", function(){
+   var timeleft = 60;
+
+   var downloadTimer = setInterval(function function1(){
+   document.getElementById("countdown").innerHTML = timeleft + 
+   "&nbsp"+"seconds remaining";
+
+   timeleft -= 1;
+   if(timeleft <= 0){
+       clearInterval(downloadTimer);
+       document.getElementById("countdown").innerHTML = "Time is up!"
+   }
+   }, 1000);
+
+   console.log(countdown);
+});

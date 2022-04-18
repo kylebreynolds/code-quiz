@@ -1,21 +1,11 @@
-
-// Variables //
-
 var buttonEl = document.querySelector("#startQuiz");
 console.log(buttonEl)
 
 var timerEl = document.getElementById("countdown");
 
-// Questions//
-
-
-
 
 // Start Game Function - starts timer and begins questions //
- buttonEl.addEventListener("click", function(){
-    // delete this alert once real function added //
-  
- })
+
 //timer function//
 document.getElementById("startQuiz").addEventListener("click", function(){
    var timeleft = 60;
@@ -34,10 +24,7 @@ document.getElementById("startQuiz").addEventListener("click", function(){
    console.log(countdown);
 });
 
-// Hide game intro//
-
-
-//test//
+//hide intro, show questions//
 document.getElementById("startQuiz")
         .addEventListener("click", function() {
   document.getElementById("beforeStart").hidden = true;
@@ -47,5 +34,15 @@ document.getElementById("startQuiz")
 
 
 
+// questions //
 
-//test hide show//
+
+
+
+// scoring //
+
+
+
+
+// store high scores //
+
